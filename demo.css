@@ -1,0 +1,74 @@
+/* // // let word ="world" 
+// // console.log(word[2]);
+// // console.log(word[0])
+
+
+
+// // concatenation (jorna)
+// let fname = 'Ahad';
+// let lname ='Ahmed';
+// let fullname = fname + " " + lname;
+// console.log(fullname); */
+
+.container{
+    display: grid;
+    grid-template-areas: 
+
+        'a a b b b c c d'
+        'a'
+    
+    
+    
+    ;
+
+}
+
+.items1{
+    background-color: gainsboro ;
+    grid-area: a ;
+}
+.items2{
+    background-color: aqua;
+    grid-area: b;
+}
+.items3{
+    background-color: black;
+     grid-area: c;
+}
+.items4{
+    background-color: blue;
+     grid-area: ;
+}
+.items5{
+    background-color: darkblue;
+     grid-area: ;
+}
+.items6{
+    background-color: blueviolet;
+     grid-area: ;
+}
+.items7{
+    background-color: brown;
+     grid-area: ;
+}
+
+.items8{
+    background-color: darkcyan;
+     grid-area: ;
+}
+.items9{
+    background-color: saddlebrown;
+     grid-area: ;
+}
+.items10{
+    background-color: whitesmoke;
+     grid-area: ;
+}
+.items11{
+    background-color: salmon;
+     grid-area: ;
+}
+.items12{
+    background-color: red;
+     grid-area: ;
+}
