@@ -734,6 +734,7 @@ header .icons #menu-bars {
 
     html {
         font-size: 50%;
+        overflow: hidden;
     }
 
     .dishes .box-container .box img {
