@@ -22,7 +22,7 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
+    overflow: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
@@ -230,7 +230,7 @@ header .icons #menu-bars {
 
 .dishes .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 2fr));
     gap: 1.5rem;
 
 }
