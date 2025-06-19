@@ -79,3 +79,21 @@ var swiper = new Swiper(".review-slider", {
     },
   }
 });
+
+
+
+    function revealSections() {
+        const sections = document.querySelectorAll('section');
+        const triggerBottom = window.innerHeight * 0.85;
+
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            if (sectionTop < triggerBottom) {
+                section.classList.add('reveal');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', revealSections);
+    window.addEventListener('load', revealSections); // page load par bhi trigger kare
+

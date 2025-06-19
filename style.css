@@ -51,6 +51,13 @@ section:nth-child(even) {
     letter-spacing: .1rem;
 }
 
+a:focus, button:focus, input:focus {
+    outline: 2px solid var(--green);
+    outline-offset: 2px;
+}
+
+
+
 header {
     position: fixed;
     top: 0;
@@ -616,6 +623,31 @@ header .icons #menu-bars {
 
 .footer .credit span{
     color: var(--green);
+}
+section {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease-in-out;
+}
+
+section.reveal {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
