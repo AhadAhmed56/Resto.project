@@ -624,20 +624,7 @@ header .icons #menu-bars {
 .footer .credit span{
     color: var(--green);
 }
-section {
-    animation: fadeIn 0.5s ease-in;
-}
 
-/* @keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-} */
 
 section {
     opacity: 0;
@@ -649,6 +636,38 @@ section.reveal {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+
+/* Smooth transitions */
+section, .box, .slide, .content, .image, header {
+  transition: all 0.4s ease-in-out;
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+section:not(.reveal) {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* Navbar styling on scroll */
+header.sticky {
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+/* Active nav link style */
+.navbar a.active {
+  color: var(--green);
+  font-weight: bold;
+}
+
+
 
 
 

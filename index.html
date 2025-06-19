@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- header section starts -->
     <header>
         <div class="logo"><i class="fa-solid fa-utensils"></i>Resto.</div>
-        <nav class="navbar" >
+        <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#dishes">Dishes</a>
             <a href="#about">About</a>
@@ -31,6 +34,7 @@
             <a href="#" class="fas fa-heart"> </a>
             <a href="#" class="fas fa-shopping-cart"> </a>
         </div>
+
     </header>
     <!-- header section end -->
     <!--search -form  -->
@@ -42,7 +46,7 @@
     <!-- Home section start -->
     <section class="home" id="home">
         <div class="swiper-container home-slider">
-            
+
             <div class="swiper-wrapper wrapper">
 
                 <div class=" swiper-slide slide">
@@ -89,12 +93,12 @@
     <!-- Home section end -->
     <!-- dishes section starts -->
     <section class="dishes" id="dishes">
-        <h3 class="sub-heading">our dishes</h3>
-        <p class="heading">Popular dishes</p>
+        <h3 class="sub-heading" data-aos="fade-up">our dishes</h3>
+        <p class="heading" data-aos="fade-up">today's speciality</p>
 
         <div class="box-container">
 
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
                 <img src="dish-1.png" alt="">
@@ -110,7 +114,7 @@
                 <span>$15.99</span>
                 <a href="#" class="btn"> Add to cart</a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
                 <img src="dish-2.png" alt="">
@@ -127,7 +131,7 @@
                 <a href="#" class="btn"> Add to cart</a>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
                 <img src="dish-3.png" alt="">
@@ -143,7 +147,7 @@
                 <span>$15.99</span>
                 <a href="#" class="btn"> Add to cart</a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
                 <img src="dish-4.png" alt="">
@@ -159,7 +163,7 @@
                 <span>$15.99</span>
                 <a href="#" class="btn"> Add to cart</a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
                 <img src="dish-5.png" alt="">
@@ -175,7 +179,7 @@
                 <span>$15.99</span>
                 <a href="#" class="btn"> Add to cart</a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
                 <img src="dish-6.png" alt="">
@@ -199,16 +203,19 @@
     <!-- dishes section end -->
     <!-- about section starts -->
 
-    <section class="about" id="about">
-        <h3 class="sub-heading">about us</h3>
-        <h1 class="heading">why choose us?</h1>
+    <section class="about" id="about" >
+
+
+        <h3 class="sub-heading" data-aos="fade-up">about us</h3>
+        <h1 class="heading" data-aos="fade-up">why choose us?</h1>
+
 
         <div class="row">
-            <div class="image">
+            <div class="image" data-aos="fade-right">
                 <img src="about-img.png" alt="">
             </div>
 
-            <div class="content">
+            <div class="content" data-aos="fade-left">
                 <h3>best food in the country</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ea doloremque iure consequuntur
                     maiores optio eaque praesentium autem nostrum, animi odit architecto pariatur mollitia sunt
@@ -240,12 +247,15 @@
 
     <!-- menu section starts -->
     <section class="menu" id="menu">
-        <h3 class="sub-heading">our menu </h3>
-        <h1 class="heading"> today's speciality</h1>
+
+
+        <h3 class="sub-heading" data-aos="fade-up">our menu</h3>
+        <h1 class="heading" data-aos="fade-up">today's speciality</h1>
+
 
         <div class="box-container">
 
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
 
                 <div class="image">
                     <img src="menu-1.jpg" alt="">
@@ -266,7 +276,7 @@
                     <span class="price">$12.99</span>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
 
                 <div class="image">
                     <img src="menu-2.jpg" alt="">
@@ -287,7 +297,7 @@
                     <span class="price">$12.99</span>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
 
                 <div class="image">
                     <img src="menu-3.jpg" alt="">
@@ -308,7 +318,7 @@
                     <span class="price">$12.99</span>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
 
                 <div class="image">
                     <img src="menu-4.jpg" alt="">
@@ -329,7 +339,7 @@
                     <span class="price">$12.99</span>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
 
                 <div class="image">
                     <img src="menu-5.jpg" alt="">
@@ -350,7 +360,7 @@
                     <span class="price">$12.99</span>
                 </div>
             </div>
-            <div class="box">
+            <div class="box"  data-aos="zoom-in">
 
                 <div class="image">
                     <img src="menu-6.jpg" alt="">
@@ -371,7 +381,7 @@
                     <span class="price">$12.99</span>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
 
                 <div class="image">
                     <img src="menu-7.jpg" alt="">
@@ -392,7 +402,7 @@
                     <span class="price">$12.99</span>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
 
                 <div class="image">
                     <img src="menu-8.jpg" alt="">
@@ -413,7 +423,7 @@
                     <span class="price">$12.99</span>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
 
                 <div class="image">
                     <img src="menu-9.jpg" alt="">
@@ -443,14 +453,17 @@
 
     <section class="review" id="review">
 
-        <h3 class="sub-heading">customer's review</h3>
-        <h1 class="heading">wht they say</h1>
+
+
+        <h3 class="sub-heading" data-aos="fade-up">customer's review</h3>
+        <h1 class="heading" data-aos="fade-up">wht they say</h1>
+
 
         <div class="swiper-container review-slider">
 
             <div class="swiper-wrapper">
 
-                <div class="swiper-slide slider">
+                <div class="swiper-slide slider" data-aos="flip-left" >
                     <i class="fas fa-quote-right"></i>
                     <div class="user">
                         <img src="pic-1.png" alt="">
@@ -470,7 +483,7 @@
                         recusandae vero at. Ipsam eum voluptatum nam voluptas distinctio. Iste, minima facere.</p>
                 </div>
 
-                <div class="swiper-slide slider">
+                <div class="swiper-slide slider" data-aos="flip-left" >
                     <i class="fas fa-quote-right"></i>
                     <div class="user">
                         <img src="pic-2.png" alt="">
@@ -489,7 +502,7 @@
                         hic soluta veniam, optio minima odit repellat molestiae ipsum sit maiores velit, asperiores ex,
                         recusandae vero at. Ipsam eum voluptatum nam voluptas distinctio. Iste, minima facere.</p>
                 </div>
-                <div class="swiper-slide slider">
+                <div class="swiper-slide slider" data-aos="flip-left" >
                     <i class="fas fa-quote-right"></i>
                     <div class="user">
                         <img src="pic-3.png" alt="">
@@ -508,7 +521,7 @@
                         hic soluta veniam, optio minima odit repellat molestiae ipsum sit maiores velit, asperiores ex,
                         recusandae vero at. Ipsam eum voluptatum nam voluptas distinctio. Iste, minima facere.</p>
                 </div>
-                <div class="swiper-slide slider">
+                <div class="swiper-slide slider" data-aos="flip-left">
                     <i class="fas fa-quote-right"></i>
                     <div class="user">
                         <img src="pic-4.png" alt="">
@@ -536,105 +549,110 @@
     <!-- order section starts -->
 
     <section class="order" id="order">
-        <h3 class="sub-heading">order</h3>
-        <h1 class="heading">free and fast</h1>
-   
 
-    <form action="">
-        <div class="inputBox">
-            <div class="input">
-                <span>your order</span>
-                <input type="text" placeholder="enter your name">
-            </div>
-            <div class="input">
-                <span>your order</span>
-                <input type="number" placeholder="enter your number">
-            </div>
-        </div>
 
-        <div class="inputBox">
-            <div class="input">
-                <span>your order</span>
-                <input type="text" placeholder="enter food name">
-            </div>
-            <div class="input">
-                <span>additional food</span>
-                <input type="test" placeholder="extra with food">
-            </div>
-        </div>
 
-        <div class="inputBox">
-            <div class="input">
-                <span>how much</span>
-                <input type="number" placeholder="how many orders">
-            </div>
-            <div class="input">
-                <span>date and time</span>
-                <input type="datetime-local">
-            </div>
-        </div>
-        <div class="inputBox">
-            <div class="input">
-                <span>your address</span>
-                <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div class="input">
-                <span>your message</span>
-                <textarea name="" placeholder="enter your massege" id="" cols="30" rows="10"></textarea>
-            </div>
-        </div>
-        <input type="submit" value="order now" class="btn">
-    </form>
+        <h3 class="sub-heading" data-aos="fade-up">order</h3>
+        <h1 class="heading" data-aos="fade-up">fast and free</h1>
 
-</section>
+
+
+        <form action=""  data-aos="fade-up">
+            <div class="inputBox">
+                <div class="input">
+                    <span>your order</span>
+                    <input type="text" placeholder="enter your name">
+                </div>
+                <div class="input">
+                    <span>your order</span>
+                    <input type="number" placeholder="enter your number">
+                </div>
+            </div>
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>your order</span>
+                    <input type="text" placeholder="enter food name">
+                </div>
+                <div class="input">
+                    <span>additional food</span>
+                    <input type="text" placeholder="extra with food">
+
+                </div>
+            </div>
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>how much</span>
+                    <input type="number" placeholder="how many orders">
+                </div>
+                <div class="input">
+                    <span>date and time</span>
+                    <input type="datetime-local">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>your address</span>
+                    <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input">
+                    <span>your message</span>
+                    <textarea name="" placeholder="enter your massege" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="order now" class="btn">
+        </form>
+
+    </section>
     <!-- order sedction ends -->
 
-<!-- footer section starts -->
-  
-<section class="footer">
-    <div class="box-container">
-        <div class="box">
-            <h3>location</h3>
-            <a href="#">pakistan</a>
-            <a href="#">china</a>
-            <a href="#">japan</a>
-            <a href="#">palestin</a>
-            <a href="#">canada</a>
-        </div>
+    <!-- footer section starts -->
 
- <div class="box">
-            <h3>quick links</h3>
-            <a href="#">home</a>
-            <a href="#">dishes</a>
-            <a href="#">about</a>
-            <a href="#">menu</a>
-            <a href="#">review</a>
-            <a href="#">order</a>
-        </div>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>location</h3>
+                <a href="#">pakistan</a>
+                <a href="#">china</a>
+                <a href="#">japan</a>
+                <a href="#">palestin</a>
+                <a href="#">canada</a>
+            </div>
 
-        
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">dishes</a>
+                <a href="#">about</a>
+                <a href="#">menu</a>
+                <a href="#">review</a>
+                <a href="#">order</a>
+            </div>
 
-          <div class="box">
-            <h3>contact info</h3>
-            <a href="#">+92123-23-232</a>
-            <a href="#">c111-222-333</a>
-            <a href="#">ahadahmed453266@gmail.com</a>
-            <a href="#">ateeqahmemd @gmail.com</a>
-            <a href="#">karachi, pakistan-403215</a>
-        </div>
 
-          <div class="box">
-            <h3>follow us</h3>
-            <a href="#">facebook</a>
-            <a href="#">instagram</a>
-            <a href="#">whatsapp</a>
-            <a href="#">linkedin</a>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+92123-23-232</a>
+                <a href="#">c111-222-333</a>
+                <a href="#">ahadahmed453266@gmail.com</a>
+                <a href="#">ateeqahmemd @gmail.com</a>
+                <a href="#">karachi, pakistan-403215</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">whatsapp</a>
+                <a href="#">linkedin</a>
+            </div>
         </div>
-    </div>
 
         <div class="credit">copyright @ 2021 by <span>mr. web designer</span></div>
-</section>
- <!-- footer section end -->
+    </section>
+    <!-- footer section end -->
 
 
 
@@ -642,6 +660,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- custom js file link -->
     <script src="script.js"></script>
+
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,   // animation duration in ms
+            delay: 100,       // delay before animation starts
+            once: true,       // animation runs only once
+        });
+    </script>
+
 </body>
 
 </html>
