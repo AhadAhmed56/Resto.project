@@ -98,4 +98,3 @@ var swiper = new Swiper(".review-slider", {
     window.addEventListener('load', revealSections); // page load par bhi trigger kare
 
     
-
