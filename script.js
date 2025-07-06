@@ -98,3 +98,63 @@ var swiper = new Swiper(".review-slider", {
     window.addEventListener('load', revealSections); // page load par bhi trigger kare
 
     
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".card");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+          observer.unobserve(entry.target); // animate once
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  });
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".card");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+          observer.unobserve(entry.target); // run once
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  });
+
+
+  
+
+var swiper = new Swiper(".banner-slider", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });

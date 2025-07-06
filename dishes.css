@@ -175,7 +175,7 @@ header .icons #menu-bars {
 }
 
 
-.menu-banner {
+.dishes-banner {
   background-image: url('banner.jpg'); /* apni image ka path correct rakhna */
   background-size: cover;
   background-position: center;
@@ -189,7 +189,7 @@ header .icons #menu-bars {
   position: relative;
 }
 
-.menu-banner::before {
+.dishes-banner::before {
   content: '';
   position: absolute;
   top: 0; left: 0;
@@ -199,7 +199,7 @@ header .icons #menu-bars {
   z-index: 0;
 }
 
-.menu-banner .overlay {
+.dishes-banner .overlay {
   position: absolute;
   top: 50%;
   left: 45%;
@@ -207,7 +207,7 @@ header .icons #menu-bars {
   z-index: 1;
 }
 
-.menu-banner h1 {
+.dishes-banner h1 {
   font-size: 3.5rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -216,23 +216,23 @@ header .icons #menu-bars {
   font-family: 'Playfair Display', serif;
 }
 
-.menu-banner .breadcrumb {
+.dishes-banner .breadcrumb {
   font-size: 1.1rem;
   color: #eee;
 }
 
-.menu-banner .breadcrumb a {
+.dishes-banner .breadcrumb a {
   color: #fff;
   text-decoration: none;
   margin: 0 0.3rem;
   transition: 0.3s;
 }
 
-.menu-banner .breadcrumb a:hover {
+.dishes-banner .breadcrumb a:hover {
   color: yellow;
 }
 
-.menu-banner .breadcrumb span {
+.dishes-banner .breadcrumb span {
   margin: 0 0.3rem;
   color: #ccc;
 }
@@ -453,15 +453,15 @@ header .icons #menu-bars {
         margin: 0 1rem;
     }
 
-   .menu-banner {
+   .dishes-banner {
     height: 40rem;
-  }
-
-  .menu-banner h1 {
+  
+   }
+  .disehs-banner h1 {
     font-size: 2rem;
   }
 
-  .menu-banner p {
+  .dishes-banner p {
     font-size: 0.9rem;
   }
 }
@@ -488,19 +488,19 @@ header .icons #menu-bars {
         height: auto;
         width: 100%;
     }
-  .menu-banner {
+  .dishes-banner {
     height: 180px;
   }
 
-  .menu-banner .overlay {
+  .dishes-banner .overlay {
     padding: 1rem 1.5rem;
   }
 
-  .menu-banner h1 {
+  .dishes-banner h1 {
     font-size: 1.5rem;
   }
 
-  .menu-banner p {
+  .dishes-banner p {
     font-size: 0.8rem;
    letter-spacing: 1px;
   }
