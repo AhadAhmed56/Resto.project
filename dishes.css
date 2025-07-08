@@ -454,7 +454,7 @@ header .icons #menu-bars {
     }
 
    .dishes-banner {
-    height: 40rem;
+    height: 50rem;
   
    }
   .disehs-banner h1 {
@@ -489,8 +489,9 @@ header .icons #menu-bars {
         width: 100%;
     }
   .dishes-banner {
-    height: 180px;
-  }
+    height: 40rem;
+  
+   }
 
   .dishes-banner .overlay {
     padding: 1rem 1.5rem;
@@ -502,7 +503,7 @@ header .icons #menu-bars {
 
   .dishes-banner p {
     font-size: 0.8rem;
-   letter-spacing: 1px;
+   letter-spacing: .5rem;
   }
 
     
