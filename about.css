@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patua+One&family=Rubik+Bubbles&family=Satisfy&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patua+One&family=Rubik+Bubbles&family=Satisfy&family=Seymour+One&display=swap');
+
 
 :root {
     --green: #27ae60;
@@ -257,11 +260,10 @@ header .icons #menu-bars {
     flex: 1 1 45rem;
 }
 
-.about .row .image img {
-  width: 100%;
-  height: auto;
-}
 
+.about .row .image img {
+    width: 100%;
+}
 
 .about .row .content {
     flex: 1 1 45rem;
@@ -312,26 +314,30 @@ header .icons #menu-bars {
     color: var(--black);
 }
 
-.about .row #image-again{
+.about .row #image-again {
     border-radius: 2rem;
 }
 
 
 /* dishes */
 
-.dishes .text-content{
-   height: 100%;
-   width: 70%;
-   text-align: center;
-   margin-left: 14rem;
-    
+.aboutagain .text-content {
+    height: 100%;
+    width: 70%;
+    text-align: center;
+    margin-left: 14rem;
+
 }
+
 .sub-heading {
     color: var(--black);
     font-size: 4.5rem;
     padding-top: 4rem;
     text-align: center;
     margin-bottom: 2rem;
+    font-family: "Seymour One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .heading {
@@ -342,16 +348,21 @@ header .icons #menu-bars {
     width: 80%;
     margin-left: 7rem;
     margin-bottom: 2rem;
+    line-height: 1.5;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
-.dishes .box-container {
+.aboutagain .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 2fr));
     gap: 1.5rem;
 
 }
 
-.dishes .box-container .box {
+.aboutagain .box-container .box {
     padding: 1.5rem;
     background: #fff;
     position: relative;
@@ -360,17 +371,17 @@ header .icons #menu-bars {
 }
 
 
-.dishes .box-container .box img {
+.aboutagain .box-container .box img {
     height: 17rem;
     margin: 1rem 0;
 }
 
-.dishes .box-container .box h3 {
+.aboutagain .box-container .box h3 {
     color: var(--black);
     font-size: 3.5rem;
 }
 
-.dishes .box-container .box p {
+.aboutagain .box-container .box p {
     color: var(--light-color);
     font-size: 2rem;
 }
@@ -574,57 +585,110 @@ header .icons #menu-bars {
         display: inline-block;
     }
 
-    header .navbar{
+    header .navbar {
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
-        background-color:  #fff;
+        background-color: #fff;
         padding: 1rem;
         border-top: 0.1rem solid rgba(0, 0, 0, .2);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-     header .navbar.active {
+    header .navbar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
-    header .navbar a{
+    header .navbar a {
         display: block;
         margin: 1rem;
         padding: 1.5rem;
         background-color: #eee;
-        font-size: 2rem;       
+        font-size: 2rem;
     }
 
-        .about-banner {
-    height: 60vh;
-    background-attachment: fixed;
-  }
-  
-    .about-banner .overlay{
+    .about-banner .overlay {
         padding-right: 3rem;
     }
 
-    .about-banner .overlay h1{
+    .about-banner .overlay h1 {
         font-size: 1.5rem;
     }
 
-     .about-banner .overlay .breadcrumb{
+    .about-banner .overlay .breadcrumb {
         font-size: 1rem;
-     }
+    }
 
-       .about-banner { background-attachment: fixed; }
+    .aboutagain .text-content {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
 
-  .about .row {
-    gap: 3rem;
-  }
-  .about .row .image,
-  .about .row .content {
-    flex: 1 1 calc(50% - 1.5rem);
-  }
+    /* Heading font size smaller */
+    .heading {
+        font-size: 1.8rem;
+    }
 
+    /* Grid for boxes collapses to single column */
+    .aboutagain .box-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 
-  
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+
+    }
+
+    .about .box-container .box img {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-banner {
+        height: 40rem;
+
+    }
+
+    .about-banner .overlay {
+        padding: 1rem 1.5rem;
+    }
+
+    .about-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-banner p {
+        font-size: 0.8rem;
+        letter-spacing: .5rem;
+    }
+
+    .aboutagain .text-content {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .aboutagain .text-content .sub-heading {
+        font-size: 4rem;
+    }
+
+    /* Heading font size smaller */
+    .aboutagain .text-content .heading {
+        font-size: 2rem;
+        margin-left: 2rem;
+        font-family: ;
+    }
+
+    /* Grid for boxes collapses to single column */
+    .aboutagain .box-container {
+        grid-template-columns: 1fr;
+    }
+
+
+}
