@@ -258,8 +258,10 @@ header .icons #menu-bars {
 }
 
 .about .row .image img {
-    width: 100%;
+  width: 100%;
+  height: auto;
 }
+
 
 .about .row .content {
     flex: 1 1 45rem;
@@ -595,6 +597,11 @@ header .icons #menu-bars {
         font-size: 2rem;       
     }
 
+        .about-banner {
+    height: 60vh;
+    background-attachment: fixed;
+  }
+  
     .about-banner .overlay{
         padding-right: 3rem;
     }
@@ -606,5 +613,18 @@ header .icons #menu-bars {
      .about-banner .overlay .breadcrumb{
         font-size: 1rem;
      }
+
+       .about-banner { background-attachment: fixed; }
+
+  .about .row {
+    gap: 3rem;
+  }
+  .about .row .image,
+  .about .row .content {
+    flex: 1 1 calc(50% - 1.5rem);
+  }
+
 }
+
+
   
