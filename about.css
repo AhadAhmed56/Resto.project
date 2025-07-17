@@ -613,12 +613,15 @@ header .icons #menu-bars {
 /* media */
 
 @media (max-width: 991px) {
-    html {
+   html {
         font-size: 55%;
     }
 
-    header {
+       header {
         padding: 1rem 2rem;
+    }
+    section {
+        padding: 2rem;
     }
 
 }
@@ -630,12 +633,12 @@ header .icons #menu-bars {
 
     header .navbar {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 100%;
         right: 0;
-        background-color: #fff;
-        padding: 1rem;
+        left: 0;
+        background: #fff;
         border-top: 0.1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
@@ -645,24 +648,28 @@ header .icons #menu-bars {
 
     header .navbar a {
         display: block;
-        margin: 1rem;
         padding: 1.5rem;
-        background-color: #eee;
+        margin: 1rem;
         font-size: 2rem;
+        background: #eee;
     }
 
-    .about-banner .overlay {
-        padding-right: 3rem;
+    #search-form #search-box {
+        width: 90%;
+        margin: 0 1rem;
     }
 
-    .about-banner .overlay h1 {
-        font-size: 1.5rem;
-    }
+   .about-banner {
+    height: 50rem;
+  
+   }
+  .about-banner h1 {
+    font-size: 2rem;
+  }
 
-    .about-banner .overlay .breadcrumb {
-        font-size: 1rem;
-    }
-
+  .about-banner p {
+    font-size: 0.9rem;
+  }
     .aboutagain .text-content {
         width: 90%;
         margin: 0 auto;
@@ -692,24 +699,24 @@ header .icons #menu-bars {
         height: auto;
         width: 100%;
     }
+  .about-banner {
+    height: 40rem;
+  
+   }
 
-    .about-banner {
-        height: 40rem;
+  .about-banner .overlay {
+    padding: 1rem 1.5rem;
+  }
 
-    }
+  .about-banner h1 {
+    font-size: 1.5rem;
+  }
 
-    .about-banner .overlay {
-        padding: 1rem 1.5rem;
-    }
+  .about-banner p {
+    font-size: 0.8rem;
+   letter-spacing: .5rem;
+  }
 
-    .about-banner h1 {
-        font-size: 1.5rem;
-    }
-
-    .about-banner p {
-        font-size: 0.8rem;
-        letter-spacing: .5rem;
-    }
 
     .aboutagain .text-content {
         width: 90%;
@@ -718,12 +725,12 @@ header .icons #menu-bars {
     }
 
     .aboutagain .text-content .sub-heading {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     /* Heading font size smaller */
     .aboutagain .text-content .heading {
-        font-size: 2rem;
+        font-size: 1.3rem;
         margin-left: 2rem;
     }
 
@@ -734,6 +741,8 @@ header .icons #menu-bars {
 
 
 }
+
+
 
 @media (max-width:450px) {
 
@@ -746,45 +755,23 @@ header .icons #menu-bars {
         height: auto;
         width: 100%;
     }
+  .about-banner {
+    height: 40rem;
+  
+   }
 
-    .about-banner {
-        height: 40rem;
+  .about-banner .overlay {
+    padding: 1rem 1.5rem;
+  }
 
-    }
+  .about-banner h1 {
+    font-size: 1.5rem;
+  }
 
-    .about-banner .overlay {
-        padding: 1rem 1.5rem;
-    }
+  .about-banner p {
+    font-size: 0.8rem;
+   letter-spacing: .5rem;
+  }
 
-    .about-banner h1 {
-        font-size: 1.5rem;
-    }
-
-    .about-banner p {
-        font-size: 0.8rem;
-        letter-spacing: .5rem;
-    }
-
-    .aboutagain .text-content {
-        width: 90%;
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
-
-    .aboutagain .text-content .sub-heading {
-        font-size: 2.5rem;
-    }
-
-    /* Heading font size smaller */
-    .aboutagain .text-content .heading {
-        font-size: 1.5rem;
-        margin-left: 2rem;
-    }
-
-    /* Grid for boxes collapses to single column */
-    .aboutagain .box-container {
-        grid-template-columns: 1fr;
-    }
-
-
+    
 }
