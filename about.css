@@ -440,6 +440,49 @@ header .icons #menu-bars {
     line-height: 1.8;
 }
 
+/* footer */
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    padding-top: 3rem;
+}
+
+.footer .box-container .box h3 {
+    padding: .5rem 0;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+
+.footer .box-container .box a {
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+
+.footer .box-container .box a:hover {
+    text-decoration: underline;
+    color: var(--green);
+}
+
+.footer .credit {
+    text-align: center;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    font-size: 2rem;
+    color: var(--black);
+    padding: .5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+.footer .credit span {
+    color: var(--green);
+}
 
 
 
@@ -681,6 +724,60 @@ header .icons #menu-bars {
     /* Heading font size smaller */
     .aboutagain .text-content .heading {
         font-size: 2rem;
+        margin-left: 2rem;
+    }
+
+    /* Grid for boxes collapses to single column */
+    .aboutagain .box-container {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+
+    }
+
+    .about .box-container .box img {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-banner {
+        height: 40rem;
+
+    }
+
+    .about-banner .overlay {
+        padding: 1rem 1.5rem;
+    }
+
+    .about-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-banner p {
+        font-size: 0.8rem;
+        letter-spacing: .5rem;
+    }
+
+    .aboutagain .text-content {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .aboutagain .text-content .sub-heading {
+        font-size: 2.5rem;
+    }
+
+    /* Heading font size smaller */
+    .aboutagain .text-content .heading {
+        font-size: 1.5rem;
         margin-left: 2rem;
     }
 
