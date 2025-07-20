@@ -41,6 +41,9 @@ main {
 }
 
 
+.login-form{
+    display: none;
+}
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -813,7 +816,14 @@ m
     header .icons #menu-bars {
         display: inline-block;
     }
+    
+.login-form{
+    display: inline-block;
+}
 
+.display-none{
+    display: none;  
+}
     header .navbar {
         position: absolute;
         top: 0;

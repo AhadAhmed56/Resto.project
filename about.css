@@ -36,6 +36,11 @@ main {
 }
 
 
+.login-form{
+    display: none;
+}
+
+
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -655,6 +660,14 @@ header .loginbtn a:hover {
         display: inline-block;
     }
 
+        
+.login-form{
+    display: inline-block;
+}
+
+.display-none{
+    display: none;  
+}
     header .navbar {
         position: absolute;
         top: 100%;

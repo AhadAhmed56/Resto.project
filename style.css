@@ -27,6 +27,10 @@ html {
     scroll-behavior: smooth;
 }
 
+
+.login-form{
+    display: none;
+}
 section {
     padding: 3rem 9%;
 }
@@ -861,6 +865,14 @@ header.sticky {
         display: inline-block;
     }
 
+    
+.login-form{
+    display: inline-block;
+}
+
+.display-none{
+    display: none;  
+}
     header .navbar {
         position: absolute;
         top: 100%;
