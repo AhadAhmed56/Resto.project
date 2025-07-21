@@ -224,7 +224,10 @@ header .icons .loginbtn a:hover {
 }
 
 .home .home-slider .slide .image img {
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .home .home-slider .slide .content span {
@@ -927,6 +930,22 @@ header.sticky {
     .extra1 .box-container .image {
         display: none;
     }
+}
+  
+
+
+@media (min-width: 600px) {
+  .box-container, .row, .extra1 .box-container {
+    flex-direction: row;
+  }
+}
+
+/* For desktops */
+@media (min-width: 992px) {
+  .container, .box-container, .row {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 
