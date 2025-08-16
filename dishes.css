@@ -81,6 +81,9 @@ header .logo {
     font-weight: bolder;
 }
 
+header .logo a{
+    color: var(--black);
+}
 header .logo i {
     color: var(--green);
 
